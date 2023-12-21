@@ -28,132 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            dingdan = new TabPage();
-            groupBox1 = new GroupBox();
-            label1 = new Label();
-            comboBox1 = new ComboBox();
-            dingdan_lst = new ListView();
-            订单号 = new ColumnHeader();
-            餐食号 = new ColumnHeader();
-            窗口号 = new ColumnHeader();
-            订单状态 = new ColumnHeader();
-            tabControl1.SuspendLayout();
-            dingdan.SuspendLayout();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dingdan = new System.Windows.Forms.TabPage();
+            this.编号 = new System.Windows.Forms.ColumnHeader();
+            this.菜品 = new System.Windows.Forms.ColumnHeader();
+            this.价格 = new System.Windows.Forms.ColumnHeader();
+            this.份数 = new System.Windows.Forms.ColumnHeader();
+            this.状态 = new System.Windows.Forms.ColumnHeader();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dingdan_lst = new System.Windows.Forms.ListView();
+            this.订单号 = new System.Windows.Forms.ColumnHeader();
+            this.餐食号 = new System.Windows.Forms.ColumnHeader();
+            this.窗口号 = new System.Windows.Forms.ColumnHeader();
+            this.订单状态 = new System.Windows.Forms.ColumnHeader();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(dingdan);
-            tabControl1.Location = new Point(12, 21);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1611, 990);
-            tabControl1.TabIndex = 0;
-            tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.dingdan);
+            this.tabControl1.Location = new System.Drawing.Point(9, 16);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1266, 766);
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            tabPage1.Location = new Point(8, 45);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1595, 937);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "菜品管理";
-            tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 33);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(1258, 729);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "菜品管理";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.listView1);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Location = new System.Drawing.Point(84, 5);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(731, 550);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "菜品信息列表";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Location = new System.Drawing.Point(0, 0);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 32);
+            this.comboBox2.TabIndex = 0;
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 97);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
             // 
             // dingdan
             // 
-            dingdan.Controls.Add(groupBox1);
-            dingdan.Location = new Point(8, 45);
-            dingdan.Name = "dingdan";
-            dingdan.Padding = new Padding(3);
-            dingdan.Size = new Size(1595, 937);
-            dingdan.TabIndex = 1;
-            dingdan.Text = "订单管理";
-            dingdan.UseVisualStyleBackColor = true;
+            this.dingdan.Location = new System.Drawing.Point(0, 0);
+            this.dingdan.Name = "dingdan";
+            this.dingdan.Size = new System.Drawing.Size(200, 100);
+            this.dingdan.TabIndex = 1;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(dingdan_lst);
-            groupBox1.Location = new Point(89, 93);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1407, 772);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "全部订单";
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(1010, 163);
-            label1.Name = "label1";
-            label1.Size = new Size(158, 31);
-            label1.TabIndex = 2;
-            label1.Text = "选择订单类型";
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 0;
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "全部订单", "新订单", "已接餐", "待取餐", "售后单" });
-            comboBox1.Location = new Point(1010, 214);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(242, 39);
-            comboBox1.TabIndex = 1;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 32);
+            this.comboBox1.TabIndex = 0;
             // 
             // dingdan_lst
             // 
-            dingdan_lst.Columns.AddRange(new ColumnHeader[] { 订单号, 餐食号, 窗口号, 订单状态 });
-            dingdan_lst.FullRowSelect = true;
-            dingdan_lst.Location = new Point(32, 59);
-            dingdan_lst.MultiSelect = false;
-            dingdan_lst.Name = "dingdan_lst";
-            dingdan_lst.Size = new Size(944, 686);
-            dingdan_lst.TabIndex = 0;
-            dingdan_lst.UseCompatibleStateImageBehavior = false;
-            dingdan_lst.View = View.Details;
-            dingdan_lst.SelectedIndexChanged += listView1_SelectedIndexChanged;
-            // 
-            // 订单号
-            // 
-            订单号.Text = "订单号";
-            订单号.Width = 100;
-            // 
-            // 餐食号
-            // 
-            餐食号.Text = "餐食号";
-            餐食号.Width = 100;
-            // 
-            // 窗口号
-            // 
-            窗口号.Text = "窗口号";
-            窗口号.Width = 100;
-            // 
-            // 订单状态
-            // 
-            订单状态.Text = "订单状态";
-            订单状态.Width = 150;
+            this.dingdan_lst.Location = new System.Drawing.Point(0, 0);
+            this.dingdan_lst.Name = "dingdan_lst";
+            this.dingdan_lst.Size = new System.Drawing.Size(121, 97);
+            this.dingdan_lst.TabIndex = 0;
+            this.dingdan_lst.UseCompatibleStateImageBehavior = false;
             // 
             // cafteria_manage
             // 
-            AutoScaleDimensions = new SizeF(14F, 31F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1712, 1023);
-            Controls.Add(tabControl1);
-            Name = "cafteria_manage";
-            Text = "cafteria_manage";
-            tabControl1.ResumeLayout(false);
-            dingdan.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(278, 244);
+            this.Name = "cafteria_manage";
+            this.Load += new System.EventHandler(this.cafteria_manage_Load_1);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -170,5 +183,15 @@
         private ColumnHeader 订单状态;
         private ComboBox comboBox1;
         private Label label1;
+        private GroupBox groupBox2;
+        private Button button2;
+        private Button button1;
+        private ListView listView1;
+        private ColumnHeader 菜品;
+        private ColumnHeader 价格;
+        private ColumnHeader 份数;
+        private ColumnHeader 状态;
+        private ColumnHeader 编号;
+        private ComboBox comboBox2;
     }
 }

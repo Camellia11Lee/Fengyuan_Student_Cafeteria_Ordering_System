@@ -174,5 +174,21 @@ namespace Fengyuan_Student_Cafeteria_Ordering_System
             }
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cafteria_manage_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
